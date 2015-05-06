@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive Email Design</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+
+  /* CLIENT-SPECIFIC STYLES ------------------- */
+
+  #outlook a {
+    padding: 0; /* Force Outlook to provide a "view in browser" message */
+  }
+
+  .ReadMsgBody {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  }
+
+  .ExternalClass {
+    width:100%; /* Force Hotmail to display emails at full width */
+  }
+
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; /* Force Hotmail to display normal line spacing */
+  }
+
+  body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  table, td { /* Remove spacing between tables in Outlook 2007 and up */
+    mso-table-lspace: 0pt;
+    mso-table-rspace:0pt;
+  }
+
+  img { /* Allow smoother rendering of resized image in Internet Explorer */
+    -ms-interpolation-mode: bicubic;
+  }
+
+  /* RESET STYLES --------------------------- */
+
+  body {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    font: 16px/1.2 Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #777777;
+  }
+
+  img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    margin: 0px!important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+    td[class="mobile-image-box"] {
+      padding: 0 3px 0 3px !important;
+    }
+
+
+  /* iOS BLUE LINKS */
+
+  .apple-links a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  /* MOBILE STYLES ------------------------ */
+
+  @media screen and (max-width: 600px) {
+
+    td[class="logo"] img {
+      margin: 0 auto !important;
+      float: left;
+    }
+
+    table[class="wrapper"] {
+      width: 100% !important;
+
+    }
+
+    table[class="mobile-table"] {
+      width: 100% !important;
+      padding: 10px 0px 10px 0px!important;
+    }
+
+    td[class="mobile-image-pad"] {
+      padding: 0 10px 0 10px !important;
+    }
+
+    td[class="mobile-image-box"] {
+      padding: 10px 5px 10px 5px !important;
+    }
+
+    td[class="mobile-title-pad"] {
+      padding: 30px 10px 0px 10px !important;
+    }
+
+    td[class="mobile-text-pad"] {
+      padding: 10px 10px 10px 10px !important;
+    }
+
+    td[class="mobile-column-right"] {
+      padding-top: 20px !important;
+    }
+
+    img[class="fluid-image"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    td[class="hide"] {
+      display: none !important;
+    }
+
+    td[class="mobile-button"] {
+      padding: 12px 60px 12px 60px !important;
+    }
+
+    td[class="mobile-button"] a {
+      font-size: 24px !important;
+    }
+  }
+
+</style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" bgcolor="#ffffff" style="padding: 20px 0 20px 0;">
+
+      <div style="display: none; font-size: 1px; color:#333333; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+        Mega sale on our huge selection of consoles, signup to our newsletter for a chance to win a Sontronics ARIA.
+      </div>
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <!-- LOGO/PREHEADER TEXT -->
+        <tr>
+          <td class='mobile-image-pad'>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="left" class="logo">
+                  <img src="img/logo@2x.jpg" alt="Pro Audio Design" width="170" border="0" style="display: block;" />
+                </td>
+                <td align="right" class="logo" style="color: #aaaaaa; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                  <img src="img/shipping@2x.jpg" alt="free shipping on most items, get in touch 877-223-8858" width='141' style='display: block;' />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+ <!-- Navigation -->
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="mobile-image-pad" style='border-top: 1px solid #999999;border-bottom: 1px solid #999999;' align='center'>                      <a href="http://www.proaudiodesign.com/Consoles"
+                         title="CONSOLES"
+                         style="color:#777777; text-decoration:none; text-transform:uppercase; font-size: 12px; border-right: 1px solid #999999; padding-right: 1em;">
+
+                               consoles
+                      </a>
+                    </td>
+                    <td style='border-top: 1px solid #999999;border-bottom: 1px solid #999999;' align='center'>
+                      <a href="http://www.proaudiodesign.com/Main-Monitor-Systems"
+                         title="MAIN MONITORS"
+                         style="color:#777777; text-decoration:none; text-transform:uppercase; font-size: 12px; border-right: 1px solid #999999; padding-right: 1em; padding-left: 1em;">
+                              main monitors
+                      </a>
+                    </td>
+                    <td style='border-top: 1px solid #999999;border-bottom: 1px solid #999999;' align='center'>
+                      <a href="http://www.proaudiodesign.com/search.php?mode=search&substring=+&including=all&xsearch_e4=Preowned"
+                        title="NEW &amp; USED GEAR"
+                        style="color:#777777; text-decoration:none; text-transform:uppercase; font-size: 12px; border-right: 1px solid #999999; padding-right: 1em; padding-left: 1em;">
+                            new &amp; used gear
+                      </a>
+                    </td>
+                    <td style='border-top: 1px solid #999999;border-bottom: 1px solid #999999;' align='center'>
+                      <a href="http://www.proaudiodesign.com/sell-trade-consignment.html"
+                        title="SELL YOUR USED GEAR"
+                        style="color:#777777; text-decoration:none; text-transform:uppercase; font-size: 12px; padding-right: 1em; padding-left: 1em;">
+                            sell your gear
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center"  bgcolor="#f7f7f7" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="461" class="wrapper">
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0"  width="100%">
+              <tr>
+                <td class="mobile-image-pad">
+                  <img src="img/consoles@2x.jpg" alt="great deals on new, preowned and vintage consoles. Huge selection, expert advice and services" width="461" height="364" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" bgcolor="#ffffff" style="padding: 10px 0 20px 5px;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td align="center">
+            <!-- FOUR COLUMNS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="480" align="center">
+              <tr>
+                <td align="center">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="wrapper">
+                    <tr align="center" style='margin: 0 auto;'>
+                      <td>
+                        <table class='mobile-table' border="0" cellpadding="0" cellspacing="0" width="25%" align='left'>
+                          <tr>
+                            <td>
+                              <img src="img/nams-neve-box@2x.jpg" alt="Nams Neve Logo" width="112" height="110" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                            </td>
+                          </tr>
+                        </table>
+                        <table class='mobile-table' border="0" cellpadding="0" cellspacing="0" width="25%" align='left'>
+                          <tr>
+                            <td>
+                              <img src="img/api-box@2x.jpg" alt="API logo" width="112" height="110" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                            </td>
+                          </tr>
+                        </table>
+                        <table class='mobile-table' border="0" cellpadding="0" cellspacing="0" width="25%" align='left'>
+                          <tr>
+                            <td>
+                              <img src="img/custom75-box@2x.jpg" alt="Custom75 Logo" width="112" height="110" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                            </td>
+                          </tr>
+                        </table>
+                        <table class='mobile-table' border="0" cellpadding="0" cellspacing="0" width="25%" align='left'>
+                          <tr>
+                            <td>
+                              <img src="img/avid-box@2x.jpg" alt="AVID Logo" width="112" height="110" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image" />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- LINKS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="485" align="center" >
+              <tr>
+                <td align="left" style="padding: 40px 0 20px 0; color: #777777; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase;" class="mobile-text-pad">
+                   <a href="http://www.proaudiodesign.com/Refurbishing.html" style="color: #373737; text-decoration: none;">refurbishing</a>
+                </td>
+                <td align="left" style="padding: 40px 0 20px 0; color: #777777; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase;" class="mobile-text-pad">
+                   <a href="http://www.proaudiodesign.com/PADTech-services.html" style="color: #373737; text-decoration: none;">technical service</a>
+                </td>
+                <td align="left" style="padding: 40px 0 20px 0; color: #777777; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase;" class="mobile-text-pad">
+                   <a href="http://www.proaudiodesign.com/Custom-Wiring.html" style="color: #373737; text-decoration: none;">wiring &amp; installation</a>
+                </td>
+                <td align="left" style="padding: 40px 0 20px 0; color: #777777; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase;" class="mobile-text-pad">
+                   <a href="http://www.proaudiodesign.com/Warranty.html" style="color: #373737; text-decoration: none;">warranty</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="600" align="left" class="wrapper">
+              <tr>
+                <td>
+                  <table width='96' class='mobile-table' border="0" cellpadding="0" cellspacing="0" align='left'>
+                    <tr>
+                      <td style="padding: 20px 30px 20px 40px;">
+                        <img src="img/sontronics-logo@2x.jpg" alt="Sontronics logo" width="96" border="0" style="display: block; padding: 0; " class="fluid-image" />
+                      </td>
+                    </tr>
+                  </table>
+                  <table width='211' class='mobile-table' border="0" cellpadding="0" cellspacing="0" align='left'>
+                    <tr>
+                      <td style="padding: 20px 20px 20px 20px;">
+                        <a href="http://links.elglink24.com/CBLT/nijtkkkjkjkqkokjknkojtkkkjknkmkokijtkjkikpklkqkqknjtkkkjkjkqkokjknkojtkkkjknkmkokijtkhjtkmkqklkqkpov">
+                        <img src="img/signup-btn@2x.jpg" alt="Signup for a chance to win a Sontronics ARIA microphone" width="211"  border="0" style="display: block;" class="fluid-image" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width='110' class='mobile-table' border="0" cellpadding="0" cellspacing="0" align='left'>
+                    <tr>
+                      <td style="padding: 20px 20px 20px 20px;">
+                        <img src="img/aria-@2x.jpg" alt="Sontronics ARIA mic" width="136" height="110" border="0" style="display: block;"class="fluid-image" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- ARIA GIVE AWAY -->
+
+
+<!-- FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+  <tr>
+    <td align="center" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="wrapper">
+        <tr>
+          <td align="center" style="padding: 10px 0 10px 0; color: #666666; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;" class="mobile-text-pad">
+            Sick of these emails? <a href="#" style="color: #f46e6c; text-decoration: none;">Unsubscribe</a> immediately.
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 10px 0 10px 0; color: #666666; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;" class="mobile-text-pad">
+            <span class="apple-links" style="color: #666666; text-decoration: none;">Table Junkies<br>
+              1234 Main St. Anywhere, MA 56789</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
